@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JS-Games</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/698b380f29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="menu">
+      <h1>Agar.io</h1>
+      <input id="name" placeholder="Name" type="text" />
+      <div id="divBtn">
+        <button id="playBtn"><i class="fa fa-play"></i></button>
+        <p>Play</p>
+      </div>
+    </div>
+
+    <div id="score">Pontuação: 0</div>
+    <div id="rank">
+      <h2>Ranking</h2>
+      <ol id="rankingNames"></ol>
+    </div>
+    <audio id="popSound" src="sound/happy-pop-2-185287.mp3"></audio>
+    <audio id="shotSound" src="sound/shooting-sound-fx-159024.mp3"></audio>
+    <audio id="eatSound" src="sound/bubblebeam-41985.mp3"></audio>
+    <canvas></canvas>
+    <script src="js/game.js"></script>
+  </body>
+</html>

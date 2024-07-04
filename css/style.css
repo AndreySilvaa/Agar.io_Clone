@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+}
+
+#score{
+    position: fixed;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+#menu{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+#rank{
+    display: none;
+    position: fixed;
+    right: 0;
+    border: 1px solid #00000017;
+    width: 17vw;
+    height: 21vh;
+    background: #0000009c;
+    color: white;
+    padding: 1em;
+    border: 4px solid #0000002b;
+    overflow: hidden;
+}
+
+#rank h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#rank ol{
+    padding-left: 10px;
+}
+
+#rank ol li{
+    margin: 10px;
+}
+
+#chatDiv{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    color: ghostwhite;
+    padding: 1em 3em;
+    height: 30vh;
+    width: 40vw;
+    border-top-right-radius: 15px;
+}
+
+.phrase{
+    cursor: default;
+    margin-bottom: 4px;
+}
+
+#chatDiv form{
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+#conversation{
+    height: 84%;
+    overflow: overlay;
+}
+
+#chatInput{
+    width: 60%;
+    padding: 8px 1em;
+    background: #000000c4;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+#chatInput:focus-visible{
+    outline: none;
+}
+
+#chatDiv button{
+    padding: 2px 15px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#chatDiv button:hover{
+    color: greenyellow;
+}
+
+#menu h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+#divBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#menu button{
+    cursor: pointer;
+    padding: 16px 16px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #00000038;
+}
+
+#menu p{
+    font-size: 30px;
+}
+
+#name{
+    border: 1px solid #00000038;
+    padding: 6px 5px;
+    font-size: 20px
+}
+
+#name:focus-visible{
+    outline: 0;
+}
+
+#menu button i{
+    scale: 1.5;
+    color: #00000059;
+    padding-left: 3px;
+}
+
+#menu button:hover{
+    border: 2px solid #000000b7;
+}
+
+#menu button:hover i{
+    scale: 1.6;
+    color: #000000b7;
+}
